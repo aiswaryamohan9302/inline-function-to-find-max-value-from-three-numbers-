@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+class numbers
+{
+     private:int a,b,c;
+     
+     public:inline int max(int,int,int);
+};
+
+
+int numbers::max(int,int,int)
+{
+     cout<<"enter three  numbers to find the maximun value among them";
+     cin>>a>>b>>c;
+     
+     if(a>b&&a>c)
+     cout<<a<<"is greatest among the three ";
+     
+     else if(b>a&&b>c)
+     cout<<b<<"is greatest among the three ";
+     
+     else if(c>a&&c>b)
+     cout<<c<<"is greatest among the three ";
+     
+     return(a,b,c);
+     
+}
+int main()
+{
+    int a,b,c;
+    numbers n;
+    n.max(a,b,c);
+    return 0;
+}
